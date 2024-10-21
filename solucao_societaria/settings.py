@@ -154,6 +154,12 @@ CORS_ALLOWED_ORIGINS = [
 ]
 CORS_ALLOW_CREDENTIALS = True
 
+CORS_ALLOWED_ORIGINS_DEV= ["http://localhost:3000", "http://localhost:8000"]
+CORS_ALLOWED_WHITELIST_DEV= ["http://localhost:3000", "http://localhost:8000"]
+CSRF_TRUSTED_ORIGINS_DEV= "http://localhost:8000"
+
+ALLOWED_HOSTS="flowtec.onrender.com"
+
 
 CNPJ_API_KEY = os.getenv('CNPJ_API_KEY')
 CNPJ_API_URL = os.getenv('CNPJ_API_URL')
